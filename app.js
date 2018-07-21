@@ -77,7 +77,7 @@ app.get('/about', (req, res) => {
 });
 
 // INDEX ROUTE
-app.get('/', ensureAuthenticated, (req,res) => {
+app.get('/', (req,res) => {
   const title = 'welcome'
   console.log(req.url);
   res.render('ideas/ideas', {
