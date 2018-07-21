@@ -8,9 +8,10 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="/">Home</a>
           <a class="nav-item nav-link" href="/about">About</a>
-          <a href="/ideas" class="nav-item nav-link">Ideas</a>
-          <a href="/ideas/add" class="nav-item nav-link">Add Idea</a>
           {{#if user}}
+          <a href="/ideas" class="nav-item nav-link">My Ideas</a>
+          <a href="/ideas/add" class="nav-item nav-link">Add Idea</a>
+          <a href="/ideas/all" class="nav-item nav-link">Idea Community</a>
           <a href="/users/logout" class="nav-item nav-link">Logout</a>
           {{else}}
             <a href="/users/login" class="nav-item nav-link">Login</a>

@@ -99,3 +99,13 @@ router.get('/', ensureAuthenticated, (req, res) => {
     });
   });
 });
+
+// IDEA COMMUNITY
+router.get('/all', (req,res) => {
+  Idea.find({}).sort({date:'desc'})
+  .then(ideas => {
+    res.render('ideas/index', {
+      ideas: ideas
+    });
+  });
+});
